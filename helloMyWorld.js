@@ -1,5 +1,5 @@
 document.title = "Hello my World";
-document.body.style.backgroundImage = "url('img!.jpg')";
+document.body.style.backgroundImage = "url('20240215_062500.jpg')";
 document.body.style.backgroundRepeat = "no-repeat";
 document.body.style.backgroundSize = "cover";
 const helloWorld2 = document.querySelector(".hello-world2");
