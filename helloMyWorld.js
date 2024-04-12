@@ -6,7 +6,7 @@ const nextHeader = document.getElementById("next-header");
 
 body.style.backgroundImage = "url('DSC_0001.jpg')"
 body.style.backgroundSize = "cover"
-body.style.backgroundPosition = "fixed"
+
 button.addEventListener("click", function () {
     if (button.innerHTML == "hide all") {
         nextHeader.style.visibility = "hidden"
