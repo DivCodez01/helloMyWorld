@@ -10,3 +10,16 @@ body {
     height: 100vh;
     justify-content: center;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border-radius: 20%;
+    margin: 10px;
+    padding: 10px;
+}
