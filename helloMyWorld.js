@@ -6,6 +6,17 @@ const showShaddow = document.querySelector(".showShaddow");
 const nextHeader = document.getElementById("next-header");
 const rejectShaddow = document.querySelector(".rejectShaddow");
 const container = document.querySelector(".container");
+const label = document.querySelector("label");
+
+label.addEventListener("click", function () {
+    if (label.innerHTML == "X") {
+        label.innerHTML = "✔";
+        container.style.visibility = "hidden";
+    } else {
+        label.innerHTML = "X";
+        container.style.visibility = "visible";
+    }
+})
 
 body.style.backgroundImage = "url('DSC_0001.jpg')";
 body.style.backgroundSize = "cover";

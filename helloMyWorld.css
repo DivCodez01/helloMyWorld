@@ -11,6 +11,17 @@ body {
     justify-content: center;
 }
 
+label {
+    position: absolute;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 30px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    right: 40px;
+    top: 5px;
+}
+
 h1,
 h2,
 h3,
