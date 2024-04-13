@@ -34,6 +34,6 @@ h6 {
 
 @keyframes animateHello {
     100% {
-        transform: translateY(-100px);
+        transform: translateY(30px);
     }
 }
