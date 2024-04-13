@@ -1,20 +1,27 @@
 const body = document.querySelector("body");
 const division = document.querySelector("div");
 const header = document.querySelector("h1");
-const button = document.querySelector("button");
+const hideOrShow = document.querySelector(".hideOrShow");
+const showShaddow = document.querySelector(".showShaddow");
 const nextHeader = document.getElementById("next-header");
-const container = document.querySelector(".container");
+const rejectShaddow = document.querySelector(".rejectShaddow")
 
-container.style.backgroundImage = "url('DSC_0001.jpg')";
-container.style.backgroundSize = "cover";
-container.style.width = "400px"
+body.style.backgroundImage = "url('DSC_0001.jpg')";
+body.style.backgroundSize = "cover";
 
-button.addEventListener("click", function () {
-    if (button.innerHTML == "hide all") {
+hideOrShow.addEventListener("click", function () {
+    if (hideOrShow.innerHTML == "hide all") {
         nextHeader.style.visibility = "hidden"
-        button.innerHTML = "show all"
+        hideOrShow.innerHTML = "show all"
     } else {
         nextHeader.style.visibility = "visible"
-        button.innerHTML = "hide all"
+        hideOrShow.innerHTML = "hide all"
     }
+})
+
+showShaddow.addEventListener("click", function () {
+    nextHeader.style.filter = "blur(20px)";
+})
+rejectShaddow.addEventListener("click", function () {
+    nextHeader.style.filter = "blur(0)";
 })

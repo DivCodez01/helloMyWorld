@@ -23,3 +23,17 @@ h6 {
     margin: 10px;
     padding: 10px;
 }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    animation: animateHello 1s linear infinite;
+}
+
+@keyframes animateHello {
+    100% {
+        transform: translateY(-100px);
+    }
+}
