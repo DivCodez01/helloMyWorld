@@ -11,7 +11,7 @@ body {
     justify-content: center;
 }
 
-label {
+.cancelAll {
     position: absolute;
     background-color: white;
     padding: 5px 5px 5px 5px;
@@ -31,28 +31,29 @@ label {
     width: 20px;
     text-align: center;
     font-weight: bold;
+    animation: animateHello 1s linear infinite;
+    position: absolute;
+    right: 0;
 }
 
-.next-header {
-    &:nth-of-type(1) {
-        font-size: 20px;
-    }
+.cancel1 {
+    font-size: 24px;
+}
 
-    &:nth-of-type(2) {
-        font-size: 18px;
-    }
+.cancel2 {
+    font-size: 21px;
+}
 
-    &:nth-of-type(3) {
-        font-size: 16px;
-    }
+.cancel3 {
+    font-size: 18px;
+}
 
-    &:nth-of-type(4) {
-        font-size: 14px;
-    }
+.cancel4 {
+    font-size: 15px;
+}
 
-    &:nth-of-type(5) {
-        font-size: 12px;
-    }
+.cancel5 {
+    font-size: 12px;
 }
 
 h1,
@@ -74,10 +75,11 @@ h4,
 h5,
 h6 {
     animation: animateHello 1s linear infinite;
+    display: grid;
 }
 
-@keyframes animateHello {
+/* @keyframes animateHello {
     100% {
         transform: translateY(30px);
     }
-}
+} */

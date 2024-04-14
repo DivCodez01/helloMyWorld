@@ -7,6 +7,17 @@ const nextHeader = document.getElementById("next-header");
 const rejectShaddow = document.querySelector(".rejectShaddow");
 const container = document.querySelector(".container");
 const label = document.querySelector("label");
+const otherHeader1 = document.querySelector(".otherHeader1");
+const otherHeader2 = document.querySelector(".otherHeader2");
+const otherHeader3 = document.querySelector(".otherHeader3");
+const otherHeader4 = document.querySelector(".otherHeader4");
+const otherHeader5 = document.querySelector(".otherHeader5");
+const cancel = document.querySelector(".cancel");
+const cancel1 = document.querySelector(".cancel1");
+const cancel2 = document.querySelector(".cancel2");
+const cancel3 = document.querySelector(".cancel3");
+const cancel4 = document.querySelector(".cancel4");
+const cancel5 = document.querySelector(".cancel5");
 
 label.addEventListener("click", function () {
     if (label.innerHTML == "X") {
@@ -39,4 +50,50 @@ showShaddow.addEventListener("click", function () {
 })
 rejectShaddow.addEventListener("click", function () {
     nextHeader.style.filter = "blur(0)";
+})
+
+cancel1.addEventListener("click", function () {
+    if (cancel1.innerHTML == "X") {
+        otherHeader1.style.visibility = "hidden";
+        cancel1.innerHTML = "✔";
+    } else {
+        otherHeader1.style.visibility = "visible";
+        cancel1.innerHTML = "X";
+    }
+})
+cancel2.addEventListener("click", function () {
+    if (cancel2.innerHTML == "X") {
+        otherHeader2.style.visibility = "hidden";
+        cancel2.innerHTML = "✔";
+    } else {
+        otherHeader2.style.visibility = "visible";
+        cancel2.innerHTML = "X";
+    }
+})
+cancel3.addEventListener("click", function () {
+    if (cancel3.innerHTML == "X") {
+        otherHeader3.style.visibility = "hidden";
+        cancel3.innerHTML = "✔";
+    } else {
+        otherHeader3.style.visibility = "visible";
+        cancel3.innerHTML = "X";
+    }
+})
+cancel4.addEventListener("click", function () {
+    if (cancel4.innerHTML == "X") {
+        otherHeader4.style.visibility = "hidden";
+        cancel4.innerHTML = "✔";
+    } else {
+        otherHeader4.style.visibility = "visible";
+        cancel4.innerHTML = "X";
+    }
+})
+cancel5.addEventListener("click", function () {
+    if (cancel5.innerHTML == "X") {
+        otherHeader5.style.visibility = "hidden";
+        cancel5.innerHTML = "✔";
+    } else {
+        otherHeader5.style.visibility = "visible";
+        cancel5.innerHTML = "X";
+    }
 })
