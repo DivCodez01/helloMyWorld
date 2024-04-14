@@ -25,6 +25,12 @@ label {
 .cancel {
     float: right;
     border-radius: 30px;
+    background-image: url("hurt-quote-e1601974566521.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .next-header {
