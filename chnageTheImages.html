@@ -31,9 +31,10 @@
         div {
             position: fixed;
             display: grid;
-            grid-template-columns: 25px 25px 25px 25px;
+            grid-template-columns: 25px;
             grid-gap: 10px;
             bottom: 7rem;
+            padding: 10px;
         }
 
         label {
@@ -41,6 +42,16 @@
             height: 25px;
             border-radius: 100%;
             border: 3px solid black;
+        }
+
+        label:hover {
+            background-color: rgb(129, 129, 129);
+        }
+
+        label:active {
+            transform: translateY(-3px);
+            background-color: rgb(201, 201, 201);
+            opacity: 0.4;
         }
     </style>
 </head>
@@ -50,9 +61,6 @@
     <body>
         <img />
         <div>
-            <label></label>
-            <label></label>
-            <label></label>
             <label></label>
         </div>
     </body>
