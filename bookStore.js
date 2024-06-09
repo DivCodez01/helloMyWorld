@@ -74,5 +74,6 @@ const tabs = document.querySelector(".tabs");
 const panels = document.querySelectorAll(".panel");
 
 tabs.addEventListener("click", (ev) => {
-    console.log("lolo");
+    if (ev.target.tagName == "Li") {
+    }
 })
