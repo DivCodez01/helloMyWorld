@@ -54,14 +54,16 @@ addForm.hide.onclick = function (ev) {
     }
 }
 
-searchForm.searchInput.onkeyup = function (ev) {
+searchForm.searchInput.onkeydown = function (ev) {
+    let searchValue = searchForm.searchInput.value;
     books.querySelectorAll("#book-list ul li")
         .forEach(liElement => {
-            liElement = liElement.querySelector(".name").innerHTML;
-            let searchValue = searchForm.searchInput.value;
-            if (liElement.match(searchValue)) {
-                console.log(liElement)
+            liElement = liElement.querySelector(".name");
+            if (liElement.innerHTML.match(searchValue)) {
+                liElement.parentElement.style.display = 'block';
+                console.log("lolo")
+            } else {
+                liElement.parentElement.style.display = 'none';
             }
-
         })
 }
