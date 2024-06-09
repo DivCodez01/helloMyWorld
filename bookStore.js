@@ -69,3 +69,10 @@ searchForm.searchInput.onkeyup = function (ev) {
             }
         })
 }
+
+const tabs = document.querySelector(".tabs");
+const panels = document.querySelectorAll(".panel");
+
+tabs.addEventListener("click", (ev) => {
+    console.log("lolo");
+})
