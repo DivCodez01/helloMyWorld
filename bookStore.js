@@ -16,18 +16,18 @@ function addnewElement() {
     const nameList = document.createElement("span");
     const deleteList = document.createElement("span");
 
-    // if (inputValue) {
-    nameList.classList.add('name');
-    deleteList.classList.add('delete');
+    if (inputValue) {
+        nameList.classList.add('name');
+        deleteList.classList.add('delete');
 
-    nameList.innerHTML = inputValue;
-    deleteList.innerHTML = 'delete';
+        nameList.innerHTML = inputValue;
+        deleteList.innerHTML = 'delete';
 
-    list.appendChild(nameList);
-    list.appendChild(deleteList);
-    books.appendChild(list);
+        list.appendChild(nameList);
+        list.appendChild(deleteList);
+        books.appendChild(list);
 
-    // }
+    }
     form.input.value = '';
 }
 
@@ -40,3 +40,13 @@ books.addEventListener("click", function (ev) {
         li.remove()
     }
 })
+
+form.hide.onclick = function (ev) {
+
+    if (form.hide.checked) {
+        books.style.display = "none";
+    } else {
+        // books.style.display = "initial";
+        books.style.display = "block";
+    }
+}
