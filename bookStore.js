@@ -61,7 +61,7 @@ searchForm.searchInput.onkeyup = function (ev) {
             let liElementValue = liElement.innerHTML.toLowerCase();
             let searchValue = searchForm.searchInput.value.toLowerCase();
 
-            if (liElementValue.match(searchValue)) {
+            if (liElementValue.indexOf(searchValue) != -1) {
                 liElement.parentElement.style.display = 'block';
                 console.log(liElement)
             } else {
