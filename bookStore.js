@@ -75,13 +75,17 @@ const panels = document.querySelectorAll(".panel");
 
 tabs.addEventListener("click", (ev) => {
     if (ev.target.tagName == "LI") {
-        const lolo = document.querySelector(ev.target.dataset.target);
-        panels.forEach(koko => {
-            if (koko == lolo) {
-                koko.classList.add("active");
+        const targetPanel = document.querySelector(ev.target.dataset.target);
+        panels.forEach(function (panel) {
+            if (panel == targetPanel) {
+                panel.classList.add("active");
             } else {
-                koko.classList.remove("active");
+                panel.classList.remove("active");
+                ev.target.style.background = "white";
             }
         })
     }
 })
+
+
+

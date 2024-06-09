@@ -88,4 +88,5 @@ h2 {
 
 #tabbed-content .panel.active {
     display: block;
+    transition: 3s linear;
 }
