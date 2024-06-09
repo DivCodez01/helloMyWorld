@@ -74,6 +74,14 @@ const tabs = document.querySelector(".tabs");
 const panels = document.querySelectorAll(".panel");
 
 tabs.addEventListener("click", (ev) => {
-    if (ev.target.tagName == "Li") {
+    if (ev.target.tagName == "LI") {
+        const lolo = document.querySelector(ev.target.dataset.target);
+        panels.forEach(koko => {
+            if (koko == lolo) {
+                koko.classList.add("active");
+            } else {
+                koko.classList.remove("active");
+            }
+        })
     }
 })
