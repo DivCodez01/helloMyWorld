@@ -1,17 +1,18 @@
 const pageBanner = document.getElementById("page-banner");
 const books = document.querySelector("#book-list ul");
 const deleteBtn = document.querySelectorAll("#book-list .delete");
-const form = document.forms.addBook;
+const addForm = document.forms.addBook;
+const searchForm = document.forms.searchKooks;
 
 
-form.addBtn.addEventListener("click", (ev) => {
+addForm.addBtn.addEventListener("click", (ev) => {
     ev.preventDefault();
     addnewElement();
 })
 
 function addnewElement() {
 
-    let inputValue = form.input.value;
+    let inputValue = addForm.input.value;
     const list = document.createElement("li");
     const nameList = document.createElement("span");
     const deleteList = document.createElement("span");
@@ -26,10 +27,12 @@ function addnewElement() {
         list.appendChild(nameList);
         list.appendChild(deleteList);
         books.appendChild(list);
-
     }
+
     form.input.value = '';
 }
+
+
 
 books.addEventListener("click", function (ev) {
 
@@ -41,7 +44,7 @@ books.addEventListener("click", function (ev) {
     }
 })
 
-form.hide.onclick = function (ev) {
+addForm.hide.onclick = function (ev) {
 
     if (form.hide.checked) {
         books.style.display = "none";
@@ -49,4 +52,11 @@ form.hide.onclick = function (ev) {
         // books.style.display = "initial";
         books.style.display = "block";
     }
+}
+
+searchForm.searchInput.onkeyup = function (ev) {
+    books.querySelectorAll("#book-list ul li")
+        .forEach((searchElm, index) => {
+            console.log(index)
+        })
 }
