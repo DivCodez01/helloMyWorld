@@ -29,7 +29,7 @@ function addnewElement() {
         books.appendChild(list);
     }
 
-    form.input.value = '';
+    addForm.input.value = '';
 }
 
 
@@ -56,7 +56,8 @@ addForm.hide.onclick = function (ev) {
 
 searchForm.searchInput.onkeyup = function (ev) {
     books.querySelectorAll("#book-list ul li")
-        .forEach((searchElm, index) => {
-            console.log(index)
+        .forEach(liElement => {
+            liElement = liElement.querySelector(".name").innerHTML;
+            console.log(liElement)
         })
 }
