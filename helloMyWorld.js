@@ -100,11 +100,11 @@ cancel5.addEventListener("click", function () {
 
 
 function add(x, y) {
-    return x + y;
+    return x ** 9 + y;
 }
 
 function sub(x, y) {
-    return x - y;
+    return x - y ** 4;
 }
 
 function div(x, y) {
