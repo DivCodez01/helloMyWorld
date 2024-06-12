@@ -35,6 +35,12 @@
 
         Admin.prototype = Object.create(User.prototype);
 
+        Admin.prototype.deleteUsers = function (user) {
+            users = users.filter(u => {
+
+            })
+        }
+
         const userOne = new User('gakizadivin1@gmail.com', 'gakizadivin');
         const userTwo = new User('divin.gakiza01@gmail.com', 'divin.gakiza');
         const admin = new Admin('divcodez@gmail.com', 'divcodez');
