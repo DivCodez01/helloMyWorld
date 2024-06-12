@@ -119,3 +119,5 @@ function calculate(a, b, operator) {
     return operator(a, b);
 }
 
+console.log(calculate(2, 7, add));
+
