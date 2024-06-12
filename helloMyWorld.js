@@ -108,11 +108,11 @@ function sub(x, y) {
 }
 
 function div(x, y) {
-    return x / y;
+    return x / y ** 5;
 }
 
 function mul(x, y) {
-    return x * y;
+    return x * y ** 3;
 }
 
 function calculate(a, b, operator) {
