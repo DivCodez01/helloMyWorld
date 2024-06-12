@@ -121,4 +121,5 @@ function calculate(a, b, operator) {
 
 console.log(calculate(2, 7, add));
 console.log(calculate(5, 9, sub));
+console.log(calculate(11, 2, div));
 
