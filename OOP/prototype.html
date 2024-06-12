@@ -33,13 +33,15 @@
             User.apply(this, ar);
         }
 
-        Admin.prototype = Object.create(User.prototype)
+        Admin.prototype = Object.create(User.prototype);
 
         const userOne = new User('gakizadivin1@gmail.com', 'gakizadivin');
         const userTwo = new User('divin.gakiza01@gmail.com', 'divin.gakiza');
         const admin = new Admin('divcodez@gmail.com', 'divcodez');
 
-        // console.log(userOne);
+        const users = [userOne, userTwo, admin];
+
+        console.log(users);
         // userOne.logout();
         admin.login()
     </script>
