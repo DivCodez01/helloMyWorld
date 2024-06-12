@@ -38,6 +38,8 @@
         Admin.prototype.deleteUsers = function (user) {
             users = users.filter(u => {
                 return u != user;
+                // return i.email != user.email;
+                // return u.name != user.name;
             })
         }
 
