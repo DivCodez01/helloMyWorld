@@ -19,13 +19,16 @@
             }
             login() {
                 console.log(this.email, 'just logged in');
+                return this;
             }
             logout() {
                 console.log(this.email, 'just logged out');
+                return this;
             }
             updatedScore() {
                 this.score++;
                 console.log(this.email, 'score is now', this.score);
+                return this;
             }
         }
 
@@ -47,6 +50,8 @@
         admin.deleteUsers(admin);
 
         console.log(users);
+
+        userTwo.updatedScore().updatedScore().login().logout().updatedScore()
     </script>
 </body>
 
