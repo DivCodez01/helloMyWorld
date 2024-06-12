@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+
+<body>
+
+    <script>
+        class User {
+            constructor(email, name) {
+                this.email = email;
+                this.name = name;
+                this.score = 0;
+                this.login = function () {
+                    console.log(this.email, 'just logged in');
+                }
+                this.logout = function () {
+                    console.log(this.email, 'just logged out');
+                }
+                this.updatedScore = function () {
+                    this.score++;
+                    console.log(this.email, 'score is now', this.score);
+                }
+            }
+        }
+
+        const userOne = new User('gakizadivin1@gmail.com', 'gakizadivin');
+        const userTwo = new User('divin.gakiza01@gmail.com', 'divin.gakiza');
+
+        console.log(userOne)
+    </script>
+</body>
+
+</html>

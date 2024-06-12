@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+
+<body>
+    <!-- Object Oriented Programming -->
+
+    <script>
+        class User {
+            constructor(email, name) {
+                this.email = email;
+                this.name = name;
+                this.score = 0;
+            }
+            login() {
+                console.log(this.email, 'just logged in');
+            }
+            logout() {
+                console.log(this.email, 'just logged out');
+            }
+            updatedScore() {
+                this.score++;
+                console.log(this.email, 'score is now', this.score);
+            }
+        }
+
+        class Admin extends User {
+            deleteUsers(user) {
+                users = users.filter(u => {
+                    return u != user;
+                    // return u.email != user.email;
+                })
+            }
+        }
+
+        const userOne = new User('gakizadivin1@gmail.com', 'gakizadivin');
+        const userTwo = new User('divin.gakiza01@gmail.com', 'divin.gakiza');
+        const admin = new Admin('divcodez@gmail.com', 'divcodez');
+
+        let users = [userOne, userTwo, admin];
+
+        admin.deleteUsers(admin);
+
+        console.log(users);
+    </script>
+</body>
+
+</html>
