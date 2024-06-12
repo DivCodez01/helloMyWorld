@@ -114,3 +114,8 @@ function div(x, y) {
 function mul(x, y) {
     return x * y;
 }
+
+function calculate(a, b, operator) {
+    return operator(a, b);
+}
+
