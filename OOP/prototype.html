@@ -37,7 +37,7 @@
 
         Admin.prototype.deleteUsers = function (user) {
             users = users.filter(u => {
-
+                return u != user;
             })
         }
 
@@ -45,11 +45,14 @@
         const userTwo = new User('divin.gakiza01@gmail.com', 'divin.gakiza');
         const admin = new Admin('divcodez@gmail.com', 'divcodez');
 
-        const users = [userOne, userTwo, admin];
+        let users = [userOne, userTwo, admin];
 
         console.log(users);
         // userOne.logout();
         admin.login()
+
+        console.log(admin.deleteUsers(users[1]));
+        console.log(users);
     </script>
 </body>
 
