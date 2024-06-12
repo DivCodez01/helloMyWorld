@@ -97,3 +97,8 @@ cancel5.addEventListener("click", function () {
         cancel5.innerHTML = "X";
     }
 })
+
+
+function add(x, y) {
+    return x + y;
+}
